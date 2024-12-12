@@ -1,20 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"], // Updated for Tailwind v3
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
-module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  darkMode: 'media', // Change to 'media' or remove this line if not needed
 }
